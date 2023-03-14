@@ -1,7 +1,3 @@
-CREATE DATABASE Escuela_Gaitas
-GO
-USE Escuela_Gaitas
-GO
 -- Generado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
 --   en:        2023-03-13 23:36:04 CET
 --   sitio:      SQL Server 2012

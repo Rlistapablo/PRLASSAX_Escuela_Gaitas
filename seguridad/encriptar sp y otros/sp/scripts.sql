@@ -1,0 +1,16 @@
+USE Gaitas_Enc
+GO 
+CREATE TABLE Alumnos(
+    ID int PRIMARY KEY NONCLUSTERED,
+    Nombre VARCHAR(50) NOT NULL,
+    DNI CHAR(9) NOT NULL
+)
+GO
+CREATE OR ALTER PROCEDURE dbo.todosalumnos
+WITH ENCRYPTION
+AS 
+    SELECT ID, Nombre, DNI FROM Alumnos
+    WHERE DNI IS NOT NULL
+GO 
+EXEC todosalumnos
+GO

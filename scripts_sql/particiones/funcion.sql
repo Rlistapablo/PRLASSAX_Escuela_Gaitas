@@ -1,0 +1,21 @@
+CREATE PARTITION FUNCTION Filtro_DNI (int)
+    AS RANGE LEFT FOR VALUES (500);
+GO 
+CREATE PARTITION SCHEME Filtro_DNI_Schema
+    AS PARTITION Filtro_DNI
+    TO (gaitas_part1,gaitas_part2)
+GO 
+DROP TABLE IF EXISTS Test_Persona
+GO 
+CREATE TABLE Test_Persona(
+    NIF int IDENTITY(1,50) PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL 
+) ON Filtro_DNI_Schema (NIF)
+GO 
+--COMPROBACION DE LA CREACION 
+SELECT * FROM sys.partition_functions
+GO 
+SELECT * FROM sys.partition_schemes;
+GO
+--Filtro_DNI	65536	R 	RANGE	2	0	0	2023-03-15 12:53:10.913	2023-03-15 12:53:10.913
+--Filtro_DNI_Schema	65601	PS	PARTITION_SCHEME	0	0	65536

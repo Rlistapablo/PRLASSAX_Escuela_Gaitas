@@ -1,0 +1,24 @@
+USE master
+GO 
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'abc123..';
+GO 
+CREATE CERTIFICATE triggers_prl
+WITH SUBJECT = 'Trigger prl';
+GO 
+BACKUP CERTIFICATE triggers_prl TO FILE = '/extras/triggerprl.cer'
+    WITH PRIVATE KEY (FILE = 'extras/triggerprl_pri.pvk', ENCRYPTION BY PASSWORD = 'abc123..')
+GO
+--
+CREATE DATABASE Gaitas_TDE
+GO 
+USE Gaitas_TDE
+GO 
+CREATE DATABASE ENCRYPTION KEY 
+    WITH ALGORITHM = AES_256
+ENCRYPTION BY SERVER CERTIFICATE triggers_prl
+GO
+ALTER DATABASE Gaitas_TDE
+SET ENCRYPTION ON 
+GO 
+SELECT DB_Name, encryption_state FROM sys.dm_database_encryption_keys;
+GO

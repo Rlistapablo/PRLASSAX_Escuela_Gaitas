@@ -1,2 +1,35 @@
-USE Gaitas_Enc
+USE master
+CREATE DATABASE Gaitas_Col
 GO 
+CREATE LOGIN Recepcion_Gaitas WITH PASSWORD = 'abc123..'
+GO 
+USE Gaitas_Col
+GO 
+CREATE USER Recepcion_Gaitas FOR LOGIN Recepcion_Gaitas
+GO 
+--TABLA
+CREATE TABLE Alumnos(
+    ID_Alumno int PRIMARY KEY NOT NULL,
+    Nombre VARCHAR(50) NOT NULL,
+    Apellido VARCHAR(50) NOT NULL,
+    Cuenta_Bancaria VARBINARY(150) NOT NULL
+)
+GO
+GRANT SELECT, INSERT, UPDATE, DELETE ON Alumnos TO Recepcion_Gaitas
+GO 
+--ENCRYPT
+CREATE SYMMETRIC KEY Clave_Cuentas
+AUTHORIZATION Recepcion_Gaitas
+WITH ALGORITHM = AES_256
+ENCRYPTION BY PASSWORD = 'abc123..'
+GO
+EXEC AS User= 'Recepcion_Gaitas'
+GO 
+PRINT USER
+GO
+OPEN SYMMETRIC KEY Clave_Cuentas DECRYPTION BY PASSWORD='abc123..'
+GO
+SELECT ID_Alumno,Nombre,Apellido,CONVERT(VARCHAR(50),DecryptByKey(Cuenta_Bancaria)) AS Cuenta FROM Alumnos
+GO
+REVERT 
+GO

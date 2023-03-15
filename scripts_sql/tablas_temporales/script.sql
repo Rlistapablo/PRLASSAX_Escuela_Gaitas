@@ -11,3 +11,16 @@ CREATE TABLE instrumentos2
         period for System_time (SysStartTime,SysEndTime) )
     WITH (System_Versioning = ON (History_Table=dbo.instrumentos_all))
 GO 
+SELECT * FROM dbo.instrumentos_all2
+GO
+SELECT * FROM dbo.instrumentos2
+GO
+--CAMBIAMOS COSAS
+UPDATE instrumentos2
+    SET Fecha_Compra = '2000-1-1'
+    WHERE Marca = 'Honey'
+GO
+SELECT * FROM dbo.instrumentos_all2
+GO
+SELECT * FROM dbo.instrumentos2
+GO

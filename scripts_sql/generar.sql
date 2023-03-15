@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   en:        2023-03-13 23:36:04 CET
+--   en:        2023-03-14 23:50:40 CET
 --   sitio:      SQL Server 2012
 --   tipo:      SQL Server 2012
 
@@ -147,8 +147,7 @@ CREATE TABLE Instrumentos
     (
      ID_Instrumento CHAR (9) NOT NULL , 
      Aula_ID_Aula CHAR (9) NOT NULL , 
-     Nombre VARCHAR (50) NOT NULL , 
-     Imagen VARBINARY NOT NULL 
+     Tipos_de_gaitas_ID_Tipo_de_gaita CHAR (9) NOT NULL 
     )
 GO
 
@@ -300,6 +299,20 @@ ALTER TABLE Telefono ADD CONSTRAINT Telefono_PK PRIMARY KEY CLUSTERED (Telefono,
      ALLOW_ROW_LOCKS = ON )
 GO
 
+CREATE TABLE Tipos_de_gaitas 
+    (
+     ID_Tipo_de_gaita CHAR (9) NOT NULL , 
+     Nombre VARCHAR (50) NOT NULL , 
+     Imagen VARBINARY NOT NULL 
+    )
+GO
+
+ALTER TABLE Tipos_de_gaitas ADD CONSTRAINT Tipos_de_gaitas_PK PRIMARY KEY CLUSTERED (ID_Tipo_de_gaita)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
 CREATE TABLE Trabajadores 
     (
      NIF CHAR (9) NOT NULL , 
@@ -441,6 +454,19 @@ ALTER TABLE Instrumentos
     REFERENCES Aula 
     ( 
      ID_Aula 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE Instrumentos 
+    ADD CONSTRAINT Instrumentos_Tipos_de_gaitas_FK FOREIGN KEY 
+    ( 
+     Tipos_de_gaitas_ID_Tipo_de_gaita
+    ) 
+    REFERENCES Tipos_de_gaitas 
+    ( 
+     ID_Tipo_de_gaita 
     ) 
     ON DELETE NO ACTION 
     ON UPDATE NO ACTION 
@@ -608,9 +634,9 @@ GO
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            22
+-- CREATE TABLE                            23
 -- CREATE INDEX                             0
--- ALTER TABLE                             47
+-- ALTER TABLE                             49
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

@@ -11,7 +11,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('192.168.1.201','Escuela_Gaitas','sa','abc123..')
+cnxn,cursor=connect('192.168.1.201','EscuelaGaitas_prl','sa','abc123..')
 for x in range(1,15):
     aula=str(x)+'A'
     cursor.execute(f"INSERT INTO Aula VALUES ('{aula}');")

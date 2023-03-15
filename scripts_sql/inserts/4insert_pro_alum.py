@@ -11,7 +11,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('192.168.1.201','Escuela_Gaitas','sa','abc123..')
+cnxn,cursor=connect('192.168.1.201','EscuelaGaitas_prl','sa','abc123..')
 
 def alumno(nif):
     id_al=nif[:-1]+'A'
@@ -33,7 +33,7 @@ def conj(nif):
 
 def trab(nif):
     t=str(rd(0,1))
-    fecha=datetime.date(rd(2003,2015),rd(1,6),rd(1,21))
+    fecha=datetime.date(rd(2010,2019),rd(1,6),rd(1,21))
     q=f"INSERT INTO Trabajadores VALUES ('{nif}','{fecha}', {t});"
     cursor.execute(q)
     cnxn.commit()
@@ -41,12 +41,12 @@ def trab(nif):
 
 cursor.execute('SELECT NIF FROM Personas;')
 personas=[filas[0] for filas in cursor.fetchall()]
-for x in range(1,10):
+for x in range(1,20):
     per=personas[rd(0,len(personas)-1)]
     trab(per)
     profesor(per)
     personas.remove(per)
-for x in range(1,5):
+for x in range(1,7):
     per=personas[rd(0,len(personas)-1)]
     trab(per)
     conj(per)

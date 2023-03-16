@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS Gaitas_Masking
+GO 
+CREATE DATABASE Gaitas_Masking
+GO
+USE Gaitas_Masking
+GO 
+CREATE TABLE alum_tar(
+    ID int PRIMARY KEY NOT NULL,
+    NIF CHAR(9) NOT NULL,
+    Numero VARCHAR(30) NOT NULL,
+    CVC CHAR(3) NOT NULL,
+    Caducidad DATE NOT NULL
+)

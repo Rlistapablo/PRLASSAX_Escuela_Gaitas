@@ -1,0 +1,14 @@
+USE master
+DROP DATABASE IF EXISTS Gaitas_Always
+GO 
+CREATE DATABASE Gaitas_Always
+GO 
+USE Gaitas_Always
+GO 
+CREATE TABLE Alumnos_Pago(
+    ID int PRIMARY KEY NOT NULL,
+    NIF CHAR(9) NOT NULL,
+    Numero VARCHAR(30) NOT NULL,
+    CVC CHAR(3) NOT NULL,
+    Caducidad DATE NOT NULL
+)

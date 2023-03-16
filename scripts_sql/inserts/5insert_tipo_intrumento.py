@@ -29,11 +29,10 @@ for x in range(0,len(gaitas)):
 #print(image)
 """
 for x in range(0,len(gaitas)):
-    path = "gaitas\\"+str(x)+".png"
-    with open(path, 'rb') as file:
-        image.append(binascii.hexlify(file.read()))
+    image.append("Z:\Gaitas\\"+str(x)+".png")
+print(image)
 for x in range(0,len(gaitas)-1):
     id=str(x+1)+'G'
-    q=f"INSERT INTO Tipos_de_gaitas VALUES ('{gaitas[x]}','{image[x]}');"
+    q=f"INSERT INTO Tipos_de_gaitas(Nombre,Imagen) SELECT '{gaitas[x]}', Imagen.* FROM OPENROWSET(BULK '{image[x]}', SINGLE_BLOB) AS Imagen;"
     cursor.execute(q)
     cnxn.commit()

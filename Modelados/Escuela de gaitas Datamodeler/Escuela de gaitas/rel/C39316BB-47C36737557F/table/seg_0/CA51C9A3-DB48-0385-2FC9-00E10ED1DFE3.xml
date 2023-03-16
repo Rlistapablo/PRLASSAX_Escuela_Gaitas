@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA51C9A3-DB48-0385-2FC9-00E10ED1DFE3" name="Curso_Estilo">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Estilo_de_música_ID_estilo" id="909FC4C7-39EF-E88C-AAA9-F4C36F307372">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F6F3E7B-2936-44D4-8964-8F6643212F9C" referredColumn="32DD4FD4-4BCB-FF51-57F8-A33212FB48F6"/>
+</associations>
+</Column>
+<Column name="Curso_ID_Curso" id="9D6DD23E-0017-2693-5EF3-C9583DD09639">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76AF2770-7E87-60EC-A303-578C0909DF54" referredColumn="ED073818-A410-0ED2-0DE2-6DA102E05AE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA16B3D0-FAD2-90EC-59BE-A2507144FFD3" name="Curso_Estilo_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="909FC4C7-39EF-E88C-AAA9-F4C36F307372"/>
+<colUsage columnID="9D6DD23E-0017-2693-5EF3-C9583DD09639"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A7D6C08-5C94-961E-4895-28AC21884E0C" name="Curso_Estilo_Estilo_de_música_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>13E40705-23DE-CDFD-8870-4A30F0758D77</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="909FC4C7-39EF-E88C-AAA9-F4C36F307372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B8CAC10-E06E-3211-87D2-C314B8C79C54" name="Curso_Estilo_Curso_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>13E40705-23DE-CDFD-8870-4A30F0758D77</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D6DD23E-0017-2693-5EF3-C9583DD09639"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

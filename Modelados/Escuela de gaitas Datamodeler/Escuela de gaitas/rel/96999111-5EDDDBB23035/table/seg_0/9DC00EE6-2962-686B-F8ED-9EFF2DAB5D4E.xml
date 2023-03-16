@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DC00EE6-2962-686B-F8ED-9EFF2DAB5D4E" name="Aula">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>A37739C0-555B-5869-0966-9650B01FF465</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Aula" id="21B54682-4019-22B5-F127-9B55B8D74E68">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>7371219E-426F-DCF3-30CA-50FF89B1EF0F</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC312901-CDD0-060B-5706-FF9FBDA5F8DA" name="Aula_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>949300E5-DE73-6BC4-39E6-6CE823A94994</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21B54682-4019-22B5-F127-9B55B8D74E68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="32BEDD63-EDE9-A021-D1C9-3FF2612E56E1" containerWithKeyObject="3BB28D8E-F445-1FE5-3EF3-1421A5E22F40" localFKIndex="CC4E6362-8381-75FC-CAD3-F754DE242757" name="Telefono_Contacto_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>EFDBB32E-CD56-16FD-6D5C-C5B65316C07E</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<referredTableLongName>Contacto</referredTableLongName>
+<arc>55B5BF84-A9C8-6726-26B2-2805BF09685A</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8332EC17-E104-2379-AFDF-5EF39B656384</referredTableID>
+<keyObject>CCFB86F4-467C-C464-C25F-8A172660ADE0</keyObject>
+<referredKeyID>CCFB86F4-467C-C464-C25F-8A172660ADE0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Personas_NIF</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

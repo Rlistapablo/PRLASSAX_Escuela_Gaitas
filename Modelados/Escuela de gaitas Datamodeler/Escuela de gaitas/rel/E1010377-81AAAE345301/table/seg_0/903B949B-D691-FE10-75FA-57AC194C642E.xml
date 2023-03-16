@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="903B949B-D691-FE10-75FA-57AC194C642E" name="Tipos_de_gaitas">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>CE223A81-B978-AFC4-6689-ED20313B534B</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Tipo_de_gaita" id="F75E9EF7-AE3A-B888-B71E-DBE44E923E41">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>A4766185-7458-E249-F5E3-E6BA9409DA01</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="680065A9-5D39-F3A8-D105-48575BBB6B66">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>CB752C2B-03A5-D877-4BBE-F01E53E8D42C</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imagen" id="2E557D8C-B676-E3B4-8835-E3429AF96342">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>70DC40CA-F07F-9221-8E2C-00189F5866DC</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30E9ED35-852B-C695-05E2-9CD8EAB92DC6" name="Tipos_de_gaitas_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>CA13E5DC-3230-3998-29DB-BF80AB8FEAC4</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F75E9EF7-AE3A-B888-B71E-DBE44E923E41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

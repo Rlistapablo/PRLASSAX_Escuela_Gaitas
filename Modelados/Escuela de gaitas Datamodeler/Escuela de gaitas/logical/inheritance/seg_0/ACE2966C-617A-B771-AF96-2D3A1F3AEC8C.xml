@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.InheritanceRelation" name="Hierarchy_3" directorySegmentName="seg_0" id="ACE2966C-617A-B771-AF96-2D3A1F3AEC8C">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 11:59:35 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Super Type</nameOnSource>
+<nameOnTarget>Sub Type</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceEntity>60C06C18-EF4F-8598-3A18-ADF35BA84CC0</sourceEntity>
+<targetEntity>74FDCC71-D4F9-E421-427A-E01D92440382</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

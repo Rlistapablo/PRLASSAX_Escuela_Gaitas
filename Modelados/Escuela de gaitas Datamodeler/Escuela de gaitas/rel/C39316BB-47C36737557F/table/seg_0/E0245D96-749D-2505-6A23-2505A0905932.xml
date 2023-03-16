@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0245D96-749D-2505-6A23-2505A0905932" name="Trabajadores">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>60C06C18-EF4F-8598-3A18-ADF35BA84CC0</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NIF" id="6272B014-E8E3-4971-C40E-C84250D7A7DE">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>01EE4C92-30A4-5AC1-3D68-951836B02575</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AB86639-C79D-63EF-69D8-69708E91A31B" referredColumn="7447C21E-7EA5-98E7-4114-D27AAF90B8C5"/>
+</associations>
+</Column>
+<Column name="Fecha_de_contración" id="031D8AD0-7B4C-29DE-EACD-C48E28D2AA9D">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>F1B25B96-1633-AA0C-D413-9908B81B687E</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Alta" id="B3BFAF5D-206B-7DB1-8193-BBD83B0754C7">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>C5265E0E-2F95-07BB-FFF3-8E0C3002B5D6</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D238C1AA-7E37-AB8F-0AE0-5AC5F6D13D9F" name="Trabajadores_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>7F931942-55C1-4CD7-EEC7-A9CFD16DBAEA</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6272B014-E8E3-4971-C40E-C84250D7A7DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A2C7914-233F-D5D5-F2C4-BDF074E0E0F0" name="Trabajadores_Personas_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>589FDE4F-345D-0359-85D8-5E393FF28440</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6272B014-E8E3-4971-C40E-C84250D7A7DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

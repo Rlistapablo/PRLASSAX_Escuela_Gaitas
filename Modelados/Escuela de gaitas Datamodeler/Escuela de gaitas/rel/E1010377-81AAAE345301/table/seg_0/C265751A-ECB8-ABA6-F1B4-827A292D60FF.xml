@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C265751A-ECB8-ABA6-F1B4-827A292D60FF" name="Conserje">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>BCEFF6D9-FAD8-AEDC-A802-1FB73791732A</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NIF" id="93C7E960-AF0F-F3B6-B573-FD9A31E25AD4">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>01EE4C92-30A4-5AC1-3D68-951836B02575</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EB23FEA-CD47-A035-931D-F1530B89558B" referredColumn="954CF42F-0AF9-AC57-2C06-8695C7EE0976"/>
+</associations>
+</Column>
+<Column name="ID_Conserje" id="AD4E9BF4-CE44-0380-65C0-6B816ACB4679">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>1E0E6068-CA9B-306C-204D-84E9A8F35F7B</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0766106C-0518-F833-BA63-888BBFE7511A" name="Conserje_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>7F931942-55C1-4CD7-EEC7-A9CFD16DBAEA</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93C7E960-AF0F-F3B6-B573-FD9A31E25AD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AE69875-E291-BFBE-AA29-73771E56191D" name="Conserje_PKv1">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>7CE30156-31DD-3BC6-DB01-9BF3D467C096</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4E9BF4-CE44-0380-65C0-6B816ACB4679"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="655E0106-0F76-CE23-D82C-328F277A3663" name="Conserje_Trabajadores_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>7F691E7C-965A-21E7-B66B-E85B2D461542</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93C7E960-AF0F-F3B6-B573-FD9A31E25AD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

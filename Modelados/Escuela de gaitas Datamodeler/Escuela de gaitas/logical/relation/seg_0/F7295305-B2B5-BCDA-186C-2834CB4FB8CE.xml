@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Curso_Aula" directorySegmentName="seg_0" id="F7295305-B2B5-BCDA-186C-2834CB4FB8CE">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:17:21 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<sourcePk>949300E5-DE73-6BC4-39E6-6CE823A94994</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A37739C0-555B-5869-0966-9650B01FF465</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>56C8E5E7-C130-8F78-961E-0A512EC8E355</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

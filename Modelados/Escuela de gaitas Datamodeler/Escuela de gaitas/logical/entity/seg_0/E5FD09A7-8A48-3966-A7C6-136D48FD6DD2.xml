@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5FD09A7-8A48-3966-A7C6-136D48FD6DD2" name="Salario">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:14:06 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Salario" id="FF1CBB71-AA87-8D0A-B39C-7D36D2BE5F3A">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:14:29 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NIF" id="E3A276CD-B78B-3F0D-DCC7-8E35047A335F">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:15:26 UTC</createdTime>
+<generatorID>6FE05F44-9074-B5BE-EF3A-6E9C0FFC730C</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<referedAttribute>01EE4C92-30A4-5AC1-3D68-951836B02575</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Importe" id="F17A83AE-4983-6AE6-538C-0133C12E116F">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:14:43 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cuenta" id="27CB73C0-7845-9E8E-4D83-91FFE8FA70DA">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:15:00 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="4BEC6690-2E48-52A6-A490-ED9475F7EB46">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:15:49 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="394BBE25-8479-B2D2-E162-D96CF17AFDD5" name="Salario PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:14:42 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF1CBB71-AA87-8D0A-B39C-7D36D2BE5F3A</attributeRef>
+<attributeRef>E3A276CD-B78B-3F0D-DCC7-8E35047A335F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBC7F00D-851C-6A39-C9AC-0A83B5389845" name="Alumnos">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>D9AA59C9-7436-4DD0-C572-502F58D33125</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NIF" id="4A649817-9BA2-29BB-792F-05AC714CB59C">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>01EE4C92-30A4-5AC1-3D68-951836B02575</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C65289C-F1A2-9AD9-E1ED-DD83F5464A14" referredColumn="7DC8202C-EF53-F7C3-CDB5-062E2C113C59"/>
+</associations>
+</Column>
+<Column name="ID_Alumno" id="97368516-9902-5A87-9FB9-FC4E8BEE56DF">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>B2DB575D-6022-C334-6ACB-75FED282DC0F</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C733134-41F6-2F90-425E-AA5F63455A21" name="Alumnos_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>7F931942-55C1-4CD7-EEC7-A9CFD16DBAEA</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A649817-9BA2-29BB-792F-05AC714CB59C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="815E9209-1D0D-1C04-E027-CF47C0DAA758" name="Alumnos_PKv1">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>B05696F3-7FB9-8FFD-6999-896823CE5069</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97368516-9902-5A87-9FB9-FC4E8BEE56DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BA8B95A-8C65-331C-6AA6-CBDE5CB10413" name="Alumnos_Personas_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>D13F8C06-5A7E-BC1E-EF51-7A8A8254A4B4</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A649817-9BA2-29BB-792F-05AC714CB59C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

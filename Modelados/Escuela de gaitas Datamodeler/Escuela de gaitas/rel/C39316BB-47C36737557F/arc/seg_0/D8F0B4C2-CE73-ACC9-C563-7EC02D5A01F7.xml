@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="D8F0B4C2-CE73-ACC9-C563-7EC02D5A01F7" name="FKArc_2">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>E0245D96-749D-2505-6A23-2505A0905932</table>
+<fkeys>
+<fkeyID>7DFA5D48-6DB6-25FC-E962-300B1DD540B5</fkeyID>
+<fkeyID>96539C6F-A391-E5B1-8F84-8A8E761BB4E3</fkeyID>
+</fkeys>
+</FKArc>

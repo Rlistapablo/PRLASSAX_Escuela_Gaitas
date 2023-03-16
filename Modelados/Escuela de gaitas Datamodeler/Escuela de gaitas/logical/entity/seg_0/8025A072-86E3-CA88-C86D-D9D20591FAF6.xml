@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8025A072-86E3-CA88-C86D-D9D20591FAF6" name="Telefono">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:22:43 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Telefono" id="DE87D2FE-F2EF-BE49-47D2-913F5EB14893">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:22:50 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NIF" id="C7C25CB9-466A-6EB8-5F0C-B4FF21DEB324">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:31:06 UTC</createdTime>
+<generatorID>109AAE27-AB60-4566-A6CD-BC490E54880D</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<referedAttribute>01EE4C92-30A4-5AC1-3D68-951836B02575</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4281249F-44E6-B01B-03B6-D99867890B7D" name="Telefono PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:23:03 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE87D2FE-F2EF-BE49-47D2-913F5EB14893</attributeRef>
+<attributeRef>C7C25CB9-466A-6EB8-5F0C-B4FF21DEB324</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9EE672B-B84C-6F4C-CC07-4E1842ACDFE3" containerWithKeyObject="E197F3B3-8DC5-CCFE-B4B1-5A571F912150" localFKIndex="F9840224-2185-BC23-474F-6D745D0ADAF1" name="Efectivo_Pagos_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>550405A3-B184-E41F-5D74-CD5C829CA755</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<referredTableLongName>Pagos</referredTableLongName>
+<arc>F2B8734D-38CC-1B15-CF84-E26D05511C2D</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F6F5B674-4FC1-0C86-1E79-98621A28DB7A</referredTableID>
+<keyObject>A11972FF-131B-A802-7D6B-74A1E3E72C02</keyObject>
+<referredKeyID>A11972FF-131B-A802-7D6B-74A1E3E72C02</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Pago,Alumnos_ID_Alumno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

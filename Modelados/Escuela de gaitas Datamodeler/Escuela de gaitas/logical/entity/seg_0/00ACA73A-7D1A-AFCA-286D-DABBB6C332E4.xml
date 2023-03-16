@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00ACA73A-7D1A-AFCA-286D-DABBB6C332E4" name="Email">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:20:03 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Emails" id="EF773BEB-92AD-34CA-1DC3-080D653CC406">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:20:12 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NIF" id="C70946F4-0FAE-D643-5203-D9C6982FE519">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:30:41 UTC</createdTime>
+<generatorID>B29AACC3-B4ED-6955-B711-F58706271F2A</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<referedAttribute>01EE4C92-30A4-5AC1-3D68-951836B02575</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A8030BBC-EA27-3530-C7E7-047F58577922" name="Email PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:20:17 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EF773BEB-92AD-34CA-1DC3-080D653CC406</attributeRef>
+<attributeRef>C70946F4-0FAE-D643-5203-D9C6982FE519</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9196796D-77F7-0376-FD44-18921D9B2BEE" name="Email">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>00ACA73A-7D1A-AFCA-286D-DABBB6C332E4</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NIF" id="B93B1A3A-C478-4D5D-D0B0-1C7CC1E803F0">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>E29579B0-4A08-937D-FD8B-40B0C82B1536</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65806CD3-A93A-F6B5-7404-6BFAED7354F9" referredColumn="1B61C0B9-B6A9-0D60-7B2D-87B9E53C4DBF"/>
+</associations>
+</Column>
+<Column name="Emails" id="D3DF0534-B156-B321-43BB-4EA94AC541C4">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>EF773BEB-92AD-34CA-1DC3-080D653CC406</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>MAX</dataTypeSize>
+<ownDataTypeParameters>MAX,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Personas_NIF" id="8E171A89-023F-B5D9-FFC2-96219EAE1CCB">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:31:27 UTC</createdTime>
+<generatorID>C70946F4-0FAE-D643-5203-D9C6982FE519</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C881DAF6-4699-B6A1-B5E0-F8C15D0EE235" referredColumn="7DC8202C-EF53-F7C3-CDB5-062E2C113C59"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0130AE43-F1D8-FF77-4A9F-75343685CD96" name="Email_PKv1">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>A8030BBC-EA27-3530-C7E7-047F58577922</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3DF0534-B156-B321-43BB-4EA94AC541C4"/>
+<colUsage columnID="8E171A89-023F-B5D9-FFC2-96219EAE1CCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2EF110B-448B-8CBA-2C3A-53D08B00842B" name="Email_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>845BA19C-DA61-4E0C-7F23-D6C45F1C8504</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B93B1A3A-C478-4D5D-D0B0-1C7CC1E803F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4D0F771-5CC2-D8E2-35A7-15F452C66539" name="Email_Contacto_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:31:02 UTC</createdTime>
+<generatorID>B5881F3C-6DAA-103A-40AB-2AE030CBBEEE</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B93B1A3A-C478-4D5D-D0B0-1C7CC1E803F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="854E8F52-7ED3-1562-29C7-B5BDC9A0AFC5" name="Email_Personas_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:31:27 UTC</createdTime>
+<generatorID>B29AACC3-B4ED-6955-B711-F58706271F2A</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E171A89-023F-B5D9-FFC2-96219EAE1CCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

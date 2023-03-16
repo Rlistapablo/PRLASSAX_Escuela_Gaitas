@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="622F0876-0D42-3F66-000C-E0EB89E71548" name="Efectivo">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>81EB4691-0A7B-856D-3732-96405199C9C3</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Pago" id="7EDF2C49-E8B8-50ED-13A3-48E5A8812658">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>202857B5-35FC-B479-3CA4-02DB60FF2986</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD02CE85-8C69-F89B-7B95-7CAD4BDFC80A" referredColumn="31EA56A2-E82E-31DA-6DFD-F842315A2247"/>
+</associations>
+</Column>
+<Column name="ID_Alumno" id="F3D28C7B-A515-52DB-D414-2CC62B81A5D0">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>81E00F1F-F2E8-587D-4D4C-C6A4175ED34F</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD02CE85-8C69-F89B-7B95-7CAD4BDFC80A" referredColumn="931A864A-AB76-1A2B-A933-68DE76760B9E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9E72E18-1403-45B3-FFC2-0E3194814B8B" name="Efectivo_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>085540EB-6129-4947-965F-5B8D6FC4B80B</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EDF2C49-E8B8-50ED-13A3-48E5A8812658"/>
+<colUsage columnID="F3D28C7B-A515-52DB-D414-2CC62B81A5D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EE01D6-706E-1E72-AC16-07B08B1195E5" name="Efectivo_Pagos_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 18:32:40 UTC</createdTime>
+<generatorID>550405A3-B184-E41F-5D74-CD5C829CA755</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EDF2C49-E8B8-50ED-13A3-48E5A8812658"/>
+<colUsage columnID="F3D28C7B-A515-52DB-D414-2CC62B81A5D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

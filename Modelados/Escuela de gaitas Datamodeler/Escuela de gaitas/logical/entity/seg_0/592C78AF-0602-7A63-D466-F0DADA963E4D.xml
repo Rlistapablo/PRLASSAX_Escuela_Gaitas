@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="592C78AF-0602-7A63-D466-F0DADA963E4D" name="Instrumentos">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:07:00 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Instrumento" id="35BDB8D7-2E4B-9AE4-B0E1-C781F787970C">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:07:18 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Aula" id="E85F187B-20B4-F51E-E874-C85721228681">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:19:06 UTC</createdTime>
+<generatorID>5B2849FD-AFB8-D4B7-3E2F-4E57A4D6BC40</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<referedAttribute>7371219E-426F-DCF3-30CA-50FF89B1EF0F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Tipo de gaita" id="C1322B08-1767-0651-D1E6-1F6D63668595">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:43:08 UTC</createdTime>
+<generatorID>A0B44ED3-7EA2-75FE-BD6A-F78DFF8429A0</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="true"/>
+</engineerTo>
+<referedAttribute>A4766185-7458-E249-F5E3-E6BA9409DA01</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F870BDB9-212E-50CB-1E3F-FCE884544765" name="Instrumentos PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-02-09 12:08:38 UTC</createdTime>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<engineerTo>
+<item key="E1010377-0FAE-FD54-B8F5-81AAAE345301" value="true"/>
+<item key="C39316BB-3668-5216-3509-47C36737557F" value="true"/>
+<item key="96999111-1EB2-E635-D7DA-5EDDDBB23035" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35BDB8D7-2E4B-9AE4-B0E1-C781F787970C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="453B54E9-0CFA-6CCB-8B2A-DBE4ED6D3F33" name="Instrumentos">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>592C78AF-0602-7A63-D466-F0DADA963E4D</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Instrumento" id="691B1FA3-2EBE-3A5D-8CEA-9741566E259B">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>35BDB8D7-2E4B-9AE4-B0E1-C781F787970C</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Aula_ID_Aula" id="D2907385-1B1B-80A0-BA5B-8E1C7A8DFBB2">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>E85F187B-20B4-F51E-E874-C85721228681</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="371740E1-F80C-FB9C-A7DE-6BA70C3F6E7E" referredColumn="451147E8-A2AA-FF1F-5A2A-718310B14C56"/>
+</associations>
+</Column>
+<Column name="Tipos_de_gaitas_ID_Tipo_de_gaita" id="78BB01BC-7E38-2CB8-F7C8-5B1379A3E817">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>C1322B08-1767-0651-D1E6-1F6D63668595</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C586A196-E4B3-AA72-1D15-2E821902150A" referredColumn="F75E9EF7-AE3A-B888-B71E-DBE44E923E41"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDF8B613-48BA-DAC7-5841-19A82FE6DC8F" name="Instrumentos_PK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>F870BDB9-212E-50CB-1E3F-FCE884544765</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="691B1FA3-2EBE-3A5D-8CEA-9741566E259B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23DF85FB-99D4-5ED7-3E37-FCA093C62337" name="Instrumentos_Aula_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>5B2849FD-AFB8-D4B7-3E2F-4E57A4D6BC40</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2907385-1B1B-80A0-BA5B-8E1C7A8DFBB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8BE9623-F103-40C5-C022-06A4528B9DAD" name="Instrumentos_Tipos_de_gaitas_FK">
+<createdBy>rlist</createdBy>
+<createdTime>2023-03-14 22:44:02 UTC</createdTime>
+<generatorID>A0B44ED3-7EA2-75FE-BD6A-F78DFF8429A0</generatorID>
+<ownerDesignName>Escuela de gaitas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78BB01BC-7E38-2CB8-F7C8-5B1379A3E817"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

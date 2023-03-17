@@ -20,3 +20,4 @@ q=q[:-2]+';'
 print(q)
 cursor.execute(q)
 cnxn.commit()
+#

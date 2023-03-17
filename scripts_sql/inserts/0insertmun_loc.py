@@ -10,7 +10,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('192.168.1.201','EscuelaGaitas_prl','sa','abc123..')
+cnxn,cursor=connect('localhost','prl_EscuelaGaitas','sa','masterkey')
 q='INSERT INTO Municipio VALUES '
 lista=['Arteixo','Coruña','Culleredo','Santiago','Ferrol']
 for x in range(0,len(lista)):
@@ -20,4 +20,3 @@ q=q[:-2]+';'
 print(q)
 cursor.execute(q)
 cnxn.commit()
-#

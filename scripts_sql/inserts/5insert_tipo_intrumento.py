@@ -14,7 +14,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('localhost','EscuelaGaitas_prl','sa','masterkey')
+cnxn,cursor=connect('localhost','prl_EscuelaGaitas','sa','masterkey')
 gaitas=['Gaita Gallega','Gaita Asturiana','Gaita Escocesa','Gaita irlandesa']
 image=[]
 """
@@ -29,7 +29,7 @@ for x in range(0,len(gaitas)):
 #print(image)
 """
 for x in range(0,len(gaitas)):
-    image.append("Z:\Gaitas\\"+str(x)+".png")
+    image.append("Z:\img\\"+str(x)+".png")
 print(image)
 for x in range(0,len(gaitas)-1):
     id=str(x+1)+'G'

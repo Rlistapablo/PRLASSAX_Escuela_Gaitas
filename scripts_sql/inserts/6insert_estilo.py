@@ -12,7 +12,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('192.168.1.201','EscuelaGaitas_prl','sa','abc123..')
+cnxn,cursor=connect('localhost','prl_EscuelaGaitas','sa','masterkey')
 estilos=['punk','folclore','baile galego','electronico','sinfonico']
 for x in range(0,len(estilos)-1):
     cursor.execute(f"INSERT INTO Estilo_de_música VALUES ('{str(x+1)+'M'}','{estilos[x]}')")

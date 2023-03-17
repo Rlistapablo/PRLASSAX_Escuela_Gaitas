@@ -12,7 +12,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('192.168.1.201','EscuelaGaitas_prl','sa','abc123..')
+cnxn,cursor=connect('localhost','prl_EscuelaGaitas','sa','masterkey')
 cursos=[filas[0] for filas in cursor.execute('SELECT ID_Curso FROM Curso').fetchall()]
 alumnos=[filas[0] for filas in cursor.execute('SELECT NIF FROM Profesores').fetchall()]
 dicta=[]

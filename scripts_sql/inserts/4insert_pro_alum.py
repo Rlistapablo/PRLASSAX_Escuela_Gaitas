@@ -11,7 +11,7 @@ def connect(server,database,username,password):
     except Exception as ex:
         print(ex)
         exit()
-cnxn,cursor=connect('192.168.1.201','EscuelaGaitas_prl','sa','abc123..')
+cnxn,cursor=connect('localhost','prl_EscuelaGaitas','sa','masterkey')
 
 def alumno(nif):
     id_al=nif[:-1]+'A'

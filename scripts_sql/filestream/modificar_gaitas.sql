@@ -8,3 +8,10 @@ GO
 ALTER TABLE Tipos_de_gaitas
 ADD Imagen VARBINARY(MAX) FILESTREAM NULL
 GO 
+ALTER TABLE Instrumentos
+ALTER COLUMN Tipos_de_gaitas_ID_Tipo_de_gaita uniqueidentifier
+
+
+ALTER TABLE Instrumentos
+ADD CONSTRAINT FK_TIPO
+FOREIGN KEY (Tipos_de_gaitas_ID_Tipo_de_gaita) REFERENCES Tipos_de_gaitas(Tipo_de_Gaitas);
